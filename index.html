@@ -18,11 +18,43 @@
             cursor: pointer;
             font-size: 16px;
           }
+          nav{
+            margin-bottom: 30px;
+
+          }
+          nav a{
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+          }
+          img{
+            border-radius: 50%;
+            margin: 20px 0;
+            width: 150px;
+            height: 150px;
+          }
         </style>
     </head>
     <body>
+        <nav>
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
         <h1>hello I'm jagadeesh</h1>
-        <p>I'm learning web3 and will become the best developer</p>
-        <button>Hire Me</button>
+        <img src="portfolio.png" alt="profile">
+        <p id="about">I'm learning web3 and will become the best developer</p>
+        <h2 id="projects">My first project</h2>
+        <p>This portfolio is my day1 project</p>
+
+        <button id="hireBtn">Hire Me</button>
+        <h2 id="contact">Contact</h2>
+        <p>Email:podamekalajagadeesh@gmail.com</p>
+        <script>
+            document.getElementById("hireBtn").onclick =function(){
+                alert("thanks for shoeing interest, I'll get back to you soon");
+            }
+        </script>
     </body>
 </html>
